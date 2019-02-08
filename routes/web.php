@@ -14,11 +14,22 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 Route::prefix('admin')->group(function(){
 	Route::get('/',function(){
 		return view('admin.main');
 	})->name('admin.home');
 });
+=======
+Route::group(['middleware'=>['auth']], function(){
+	Route::prefix('admin')->group(function(){
+	Route::get('/', function(){
+		return view('admin.pages.dashboard');
+	})->name('admin.home');
+});
+});
+
+>>>>>>> Tokap eps 3-4
 
 Auth::routes();
 

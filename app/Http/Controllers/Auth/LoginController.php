@@ -25,8 +25,12 @@ class LoginController extends Controller
      *
      * @var string
      */
+<<<<<<< HEAD
     protected $redirectTo = '/home';
 
+=======
+   
+>>>>>>> Tokap eps 3-4
     /**
      * Create a new controller instance.
      *
@@ -36,4 +40,12 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+<<<<<<< HEAD
+=======
+
+    protected function redirectTo()
+    {
+        return route('admin.home');
+    }
+>>>>>>> Tokap eps 3-4
 }

@@ -10,7 +10,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+<<<<<<< HEAD
     <title>SB Admin - Blank Page</title>
+=======
+    <title>@yield('title') Tokaprani</title>
+    <link rel="icon" type="image/jpg" href="{{url('favicon.jpg')}}">
+>>>>>>> Tokap eps 3-4
 
     <!-- Bootstrap core CSS-->
     <link href="{{url('sbadminrani1/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -20,11 +25,16 @@
 
     <!-- Custom styles for this template-->
     <link href="{{url('sbadminrani1/css/sb-admin.css')}}" rel="stylesheet">
+<<<<<<< HEAD
+=======
+    @stack('css')
+>>>>>>> Tokap eps 3-4
 
   </head>
 
   <body id="page-top">
 
+<<<<<<< HEAD
     <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
       <a class="navbar-brand mr-1" href="index.html">Start Bootstrap</a>
@@ -85,10 +95,14 @@
       </ul>
 
     </nav>
+=======
+    @include('admin.navbar')
+>>>>>>> Tokap eps 3-4
 
     <div id="wrapper">
 
       <!-- Sidebar -->
+<<<<<<< HEAD
       <ul class="sidebar navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="index.html">
@@ -123,11 +137,16 @@
             <span>Tables</span></a>
         </li>
       </ul>
+=======
+      @include('admin.sidebar')
+
+>>>>>>> Tokap eps 3-4
 
       <div id="content-wrapper">
 
         <div class="container-fluid">
 
+<<<<<<< HEAD
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -140,11 +159,18 @@
           <h1>Blank Page</h1>
           <hr>
           <p>This is a great starting point for new custom pages.</p>
+=======
+          
+
+          <!-- Page Content -->
+          @yield('content')
+>>>>>>> Tokap eps 3-4
 
         </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
+<<<<<<< HEAD
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
@@ -152,6 +178,9 @@
             </div>
           </div>
         </footer>
+=======
+        @include('admin.footer')
+>>>>>>> Tokap eps 3-4
 
       </div>
       <!-- /.content-wrapper -->
@@ -165,6 +194,7 @@
     </a>
 
     <!-- Logout Modal-->
+<<<<<<< HEAD
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -183,6 +213,9 @@
       </div>
     </div>
 
+=======
+   @stack('modal')
+>>>>>>> Tokap eps 3-4
     <!-- Bootstrap core JavaScript-->
     <script src="{{url('sbadminrani1/vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{url('sbadminrani1/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -192,7 +225,13 @@
 
     <!-- Custom scripts for all pages-->
     <script src="{{url('sbadminrani1/js/sb-admin.min.js')}}"></script>
+<<<<<<< HEAD
 
+=======
+    <script type="text/JavaScript" src="{{url('sbadminrani1/js/navbar-nav.js')}}"></script>
+
+@stack('js')
+>>>>>>> Tokap eps 3-4
   </body>
 
 </html>
