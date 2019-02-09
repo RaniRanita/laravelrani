@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="{{route('admin.home')}}">
+      <a class="navbar-brand mr-1" href="
         <img src="{{url('image/logo.jpg')}}">
       Tokap Rani</a>
 
@@ -22,7 +22,7 @@
 
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="{{ route('admin.user.setting') }}">Settings</a>
             
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
