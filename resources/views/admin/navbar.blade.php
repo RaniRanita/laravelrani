@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
-      <a class="navbar-brand mr-1" href="
+      <a class="navbar-brand mr-1" href="{{ route('admin.home')}}">
         <img src="{{url('image/logo.jpg')}}">
       Tokap Rani</a>
 
@@ -46,8 +46,9 @@
           <div class="modal-footer">
             <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
             <a class="btn btn-primary" href="{{ route('logout') }}"
-            onclick="event.preventDefault();
-            document.getElementById('logout-form').submit();">Logout</a>
+              onclick="event.preventDefault();
+              document.getElementById('logout-form').submit();">Logout</a>
+            
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
             {{ csrf_field() }}
             </form>

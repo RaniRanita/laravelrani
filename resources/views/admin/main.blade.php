@@ -11,7 +11,7 @@
     <meta name="author" content="">
 
 
-    <title>SB Admin - Blank Page</title>
+    
 
     <title>@yield('title') Tokaprani</title>
     <link rel="icon" type="image/jpg" href="{{url('favicon.jpg')}}">
@@ -50,13 +50,7 @@
         <div class="container-fluid">
 
 
-          <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="index.html">Dashboard</a>
-            </li>
-            <li class="breadcrumb-item active">Blank Page</li>
-          </ol>
+          
 
           <!-- Page Content -->
           @yield('content')
